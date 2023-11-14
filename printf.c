@@ -11,12 +11,12 @@
 int _printf(const char * const format, ...)
 {
 	convert_match m[] = {
-		{"%s", printf_string}, {"%c", printf_char},
-		{"%%", printf_37},
-		{"%i", printf_int}, {"%d", printf_dec}, {"%r", printf_srev},
-		{"%R", printf_rot13}, {"%b", printf_bin}, {"%u", printf_unsigned},
-		{"%o", printf_oct}, {"%x", printf_hex}, {"%X", printf_HEX},
-		{"%S", printf_exclusive_string}, {"%p", printf_pointer}
+		{"%s", print_string}, {"%c", print_char},
+		{"%%", print_37},
+		{"%i", print_int}, {"%d", print_dec}, {"%r", print_srev},
+		{"%R", print_rot13}, {"%b", print_bin}, {"%u", print_unsigned},
+		{"%o", print_oct}, {"%x", print_hex}, {"%X", print_HEX},
+		{"%S", print_exclusive_string}, {"%p", print_pointer}
 	};
 
 	va_list args;

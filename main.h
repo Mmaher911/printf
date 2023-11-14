@@ -1,5 +1,5 @@
-#ifndef _PRINTF_H
-#define _PRINTF_H
+#ifndef MAIN_H
+#define MAIN_H
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -26,8 +26,8 @@ typedef struct format
 } convert_match;
 
 int print_pointer(va_list val);
-int print_hex_aux(unsigned long int num);
-int print_HEX_aux(unsigned int num);
+int print_hex_ex(unsigned long int num);
+int print_HEX_ex(unsigned int num);
 int print_exclusive_string(va_list val);
 int print_HEX(va_list val);
 int print_hex(va_list val);
