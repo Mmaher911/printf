@@ -12,6 +12,11 @@
 #define OUTPUT_BUF_SIZE 1024
 #define BUF_FLUSH -1
 
+#define CONVERT_LOWERCASE   1
+#define CONVERT_UNSIGNED    2
+
+#define PARAMS_INIT {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+
 /**
  * struct format - match the conversion specifiers for printf
  * @id: type char pointer of the specifier i.e (l, h) for (d, i, u, o, x, X)
